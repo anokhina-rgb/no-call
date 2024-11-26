@@ -1,0 +1,18 @@
+
+digraph {
+    A [label="Someone is not calling"]
+    B [label="He is dead"]
+    C [label="He is alive"]
+    D [label="He is not willing to call"]
+    E [label="He is calling"]
+    F [label="Outcome: Dead"]
+    G [label="Outcome: Not willing"]
+    H [label="Outcome: Connection established"]
+    A -> B
+    B -> F
+    A -> C
+    C -> D
+    D -> G
+    C -> E
+    E -> H
+}
